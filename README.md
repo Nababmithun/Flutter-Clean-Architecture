@@ -3,6 +3,18 @@
 A production-ready Flutter starter template built with Clean Architecture and MVVM pattern, using GetX, Dio, Hive, and modern tools for scalable mobile apps.
 This boilerplate is designed to help you start new large projects quickly with a consistent, maintainable, and testable structure.
 
+
+✨ Highlights
+
+Clean Architecture + MVVM (domain / data / presentation / core)
+GetX: reactive state, dependency injection, routing
+Dio: API client with auth interceptor (Bearer)
+Hive: secure token & local cache
+Easy i18n: English 🇺🇸 & Bangla 🇧🇩
+Auth flow: Splash → Login/Register → Home (BottomNav: Home, History, Profile)
+Polished UI: professional screens with reusable AppAnimations (fade / slide / scale)
+Config via .env: switch base URLs without code changes
+
 🚀 Features at a Glance
 
 🧠 Clean Architecture + MVVM – Layered, testable & maintainable codebase
