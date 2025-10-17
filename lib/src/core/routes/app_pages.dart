@@ -1,3 +1,8 @@
+import 'package:clean_architecture_mvvm/src/presentation/screens/changepassword/change_password_screen.dart';
+import 'package:clean_architecture_mvvm/src/presentation/screens/deleteaccount/delete_account_screen.dart';
+import 'package:clean_architecture_mvvm/src/presentation/screens/editprofile/edit_profile_screen.dart';
+import 'package:clean_architecture_mvvm/src/presentation/screens/notification/notifications_screen.dart';
+import 'package:clean_architecture_mvvm/src/presentation/screens/subscription/subscription_screen.dart';
 import 'package:get/get.dart';
 
 import '../../presentation/bindings/auth_binding.dart';
@@ -40,6 +45,32 @@ class AppPages {
     GetPage(
       name: Routes.profile,
       page: () => const ProfileScreen(),
+      binding: HomeBinding(),
+    ),
+
+    GetPage(
+      name: Routes.editProfile,
+      page: () => const EditProfileScreen(),
+      binding: HomeBinding(),
+    ),
+    GetPage(
+      name: Routes.changePassword,
+      page: () => const ChangePasswordScreen(),
+      binding: HomeBinding(),
+    ),
+    GetPage(
+      name: Routes.subscription,
+      page: () => const SubscriptionScreen(),
+      binding: HomeBinding(),
+    ),
+    GetPage(
+      name: Routes.notifications,
+      page: () => const NotificationsScreen(),
+      binding: HomeBinding(),
+    ),
+    GetPage(
+      name: Routes.deleteAccount,
+      page: () => const DeleteAccountScreen(),
       binding: HomeBinding(),
     ),
   ];

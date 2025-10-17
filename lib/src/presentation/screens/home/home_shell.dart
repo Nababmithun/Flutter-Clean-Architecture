@@ -23,32 +23,37 @@ class HomeShell extends StatelessWidget {
     ];
 
     return Obx(() => Scaffold(
-          appBar: AppBar(
-            title: Text('app_title'.tr),
-            actions: [
-              PopupMenuButton<String>(
-                icon: const Icon(Icons.language),
-                onSelected: (v) {
-                  if (v == 'bn') app.changeToBangla();
-                  if (v == 'en') app.changeToEnglish();
-                },
-                itemBuilder: (context) => [
-                  PopupMenuItem(value: 'bn', child: Text('bangla'.tr)),
-                  PopupMenuItem(value: 'en', child: Text('english'.tr)),
-                ],
-              ),
-            ],
+      appBar: AppBar(
+        title: Text('app_title'.tr),
+        actions: [
+          //Notification icon
+          IconButton(
+            icon: const Icon(Icons.notifications_none),
+            onPressed: () => Get.toNamed(Routes.notifications),
           ),
-          body: IndexedStack(index: home.currentIndex.value, children: pages),
-          bottomNavigationBar: NavigationBar(
-            selectedIndex: home.currentIndex.value,
-            onDestinationSelected: home.setIndex,
-            destinations: [
-              NavigationDestination(icon: const Icon(Icons.home_outlined), selectedIcon: const Icon(Icons.home), label: 'home'.tr),
-              NavigationDestination(icon: const Icon(Icons.history), label: 'history'.tr),
-              NavigationDestination(icon: const Icon(Icons.person_outline), selectedIcon: const Icon(Icons.person), label: 'profile'.tr),
-            ],
-          ),
-        ));
+        ],
+      ),
+      body: IndexedStack(
+        index: home.currentIndex.value,
+        children: pages,
+      ),
+      bottomNavigationBar: NavigationBar(
+        selectedIndex: home.currentIndex.value,
+        onDestinationSelected: home.setIndex,
+        destinations: [
+          NavigationDestination(
+              icon: const Icon(Icons.home_outlined),
+              selectedIcon: const Icon(Icons.home),
+              label: 'home'.tr),
+          NavigationDestination(
+              icon: const Icon(Icons.history),
+              label: 'history'.tr),
+          NavigationDestination(
+              icon: const Icon(Icons.person_outline),
+              selectedIcon: const Icon(Icons.person),
+              label: 'profile'.tr),
+        ],
+      ),
+    ));
   }
 }

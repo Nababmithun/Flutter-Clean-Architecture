@@ -7,7 +7,7 @@ class HomeController extends GetxController {
 
   // Simple in-memory notifications demo
   final notifications = <String>[
-    'Welcome to Mega Starter 🎉',
+    'Welcome to Mega Starter',
     'This is a demo notification',
   ].obs;
 }
