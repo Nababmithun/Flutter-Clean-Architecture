@@ -1,0 +1,19 @@
+{
+  "app_title": "মেগা স্টার্টার",
+  "login": "লগইন",
+  "register": "রেজিস্ট্রেশন",
+  "email": "ইমেইল",
+  "password": "পাসওয়ার্ড",
+  "name": "নাম",
+  "mobile": "মোবাইল",
+  "gender": "লিঙ্গ",
+  "logout": "লগআউট",
+  "home": "হোম",
+  "history": "হিস্টোরি",
+  "profile": "প্রোফাইল",
+  "notification": "নোটিফিকেশন",
+  "language": "ভাষা",
+  "bangla": "বাংলা",
+  "english": "ইংরেজি",
+  "welcome": "স্বাগতম"
+}

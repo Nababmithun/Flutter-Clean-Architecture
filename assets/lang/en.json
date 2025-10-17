@@ -1,0 +1,19 @@
+{
+  "app_title": "Mega Starter",
+  "login": "Login",
+  "register": "Register",
+  "email": "Email",
+  "password": "Password",
+  "name": "Name",
+  "mobile": "Mobile",
+  "gender": "Gender",
+  "logout": "Logout",
+  "home": "Home",
+  "history": "History",
+  "profile": "Profile",
+  "notification": "Notifications",
+  "language": "Language",
+  "bangla": "Bangla",
+  "english": "English",
+  "welcome": "Welcome"
+}
